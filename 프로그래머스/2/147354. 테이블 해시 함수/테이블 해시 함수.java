@@ -6,8 +6,7 @@ class Solution {
         Arrays.sort(data, (a, b) -> { // 정렬 과정
             if (a[col - 1] == b[col - 1])
                 return b[0] - a[0];
-            else
-                return a[col - 1] - b[col - 1];
+            return a[col - 1] - b[col - 1];
         });
         
         int answer = 0; 
